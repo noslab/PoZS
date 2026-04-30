@@ -49,8 +49,6 @@ uint32_t active_msb = 0;
 uint64_t cy_IO = 0;
 uint64_t cy_remap = 0;
 
-uint64_t Q_table[NUM_STATES][NUM_ACTIONS];
-
 /****************************************************************
  * Memory Layout
  ****************************************************************
@@ -687,26 +685,6 @@ static void NVMeV_exit(void)
 	VDEV_FINALIZE(nvmev_vdev);
 
 	NVMEV_INFO("Virtual NVMe device closed\n");
-
-	printk("CY_total_write = %lld\n", CY_write);
-	printk("CY_total_read = %lld\n", CY_read);
-	printk("CY_total_reset = %d\n", total_reset);
-	printk("CY_user_reset = %d\n", user_reset);
-
-	printk("CY_LSB_count = %lld\n", CY_LSB_count);
-	printk("CY_CSB_count = %lld\n", CY_CSB_count);
-	printk("CY_MSB_count = %lld\n", CY_MSB_count);
-
-	printk("CY_LSB_write_count = %lld\n", CY_LSB_write_count);
-	printk("CY_CSB_write_count = %lld\n", CY_CSB_write_count);
-	printk("CY_MSB_write_count = %lld\n", CY_MSB_write_count);
-
-	printk("Empty_LSB_reset = %lld\n", Empty_LSB_reset);
-	printk("Empty_CSB_reset = %lld\n", Empty_CSB_reset);
-	printk("Empty_MSB_reset = %lld\n", Empty_MSB_reset);
-
-	printk("IO_overhead = %lld\n", cy_IO); 
-	printk("remap_overhead = %lld\n", cy_remap); 
 }
 
 MODULE_LICENSE("GPL v2");
