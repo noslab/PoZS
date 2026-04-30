@@ -12,17 +12,6 @@ The current implementation is configured to run in ZNS mode by default and is de
 
 PoZS was implemented and tested on Linux kernel 5.16.0.
 
-Before building PoZS, install the dependencies required by NVMeVirt and F2FS:
-
-```bash
-sudo apt update
-sudo apt install -y build-essential linux-headers-$(uname -r)
-sudo apt install -y make gcc git
-sudo apt install -y nvme-cli f2fs-tools
-```
-
-PoZS requires an environment that can build and insert Linux kernel modules.
-
 Recommended environment:
 
 | Item | Description |
