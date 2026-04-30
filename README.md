@@ -38,8 +38,8 @@ Recommended environment:
 1. Clone the repository:
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_NAME>
+git clone https://github.com/noslab/PoZS.git
+cd PoZS
 ```
 
 2. Build and insert the PoZS module:
@@ -95,8 +95,8 @@ A typical execution flow is as follows:
 
 ```bash
 # Clone the repository
-git clone <YOUR_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_NAME>
+git clone https://github.com/noslab/PoZS.git
+cd PoZS
 
 # Build and insert the PoZS module in ZNS mode
 sudo ./module.sh
